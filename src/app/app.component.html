@@ -1,9 +1,9 @@
 <div class="container">
-  <h1>{{title}}</h1>
+  <h2>{{title}}</h2>
   <input type="text" class="form-control" (keyup.enter)="onKeyUp($event)">
   <br>
   <input type="text" class="form-control" [(ngModel)]="inputText">
   <hr>
   <p>{{inputText}}</p>
-
 </div>
+<app-cars></app-cars>
