@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Theory';
+  inputText = '';
+
+  onKeyUp(event) {
+    this.inputText = event.target.value;
+    event.target.value = '';
+  }
 }
